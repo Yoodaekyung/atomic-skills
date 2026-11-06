@@ -1,8 +1,0 @@
-{
-    "name": "atomic-css",
-    "description": "Generate HTML components using Atomic CSS utility classes",
-    "version": "1.0.0",
-    "author": {
-        "name": "Yoodaekyung"
-    }
-}

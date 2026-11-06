@@ -1,0 +1,8 @@
+{
+    "mcpServers": {
+        "atomic-css": {
+            "type": "sse",
+            "url": "https://mcp.atomiccss.dev/sse"
+        }
+    }
+}

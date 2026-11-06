@@ -1,0 +1,8 @@
+{
+    "mcpServers": {
+        "convention-lint": {
+            "type": "sse",
+            "url": "https://mcp.atomiccss.dev/convention/sse"
+        }
+    }
+}

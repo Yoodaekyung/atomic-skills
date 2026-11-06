@@ -1,6 +1,6 @@
 {
-    "name": "atomic-css-skill",
-    "description": "AI-powered HTML generation using Atomic CSS utility classes",
+    "name": "atomic-skills",
+    "description": "Atomic CSS and markup convention plugins for Claude Code",
     "owner": {
         "name": "Yoodaekyung",
         "url": "https://github.com/Yoodaekyung"
@@ -8,11 +8,13 @@
     "plugins": [
         {
             "name": "atomic-css",
-            "description": "Generate HTML components using Atomic CSS utility classes with full class reference, responsive design, and MCP server integration",
-            "source": {
-                "source": "github",
-                "repo": "Yoodaekyung/atomic-css-skill"
-            }
+            "description": "Atomic CSS class authoring, Figma to Atomic conversion, and the atomic-css MCP server",
+            "source": "./plugins/atomic-css"
+        },
+        {
+            "name": "markup-convention",
+            "description": "Markup structure, naming, and accessibility rules with the convention-lint MCP server",
+            "source": "./plugins/markup-convention"
         }
     ]
 }
