@@ -5,7 +5,7 @@ Claude Code plugins for [Atomic CSS](https://atomiccss.dev) and markup conventio
 | Plugin | Skills | MCP server |
 |---|---|---|
 | `atomic-css` | `atomic` (class authoring), `figma-to-atomic` (Figma → Atomic) | `atomic-css` (`mcp.atomiccss.dev/sse`) |
-| `markup-convention` | `markup` (structure, naming, accessibility) | `convention-lint` (`mcp.atomiccss.dev/convention/sse`) |
+| `markup-convention` | `markup` (naming rules and Convention Lint usage) | `convention-lint` (`mcp.atomiccss.dev/convention/sse`) |
 
 ## Install
 
@@ -15,7 +15,9 @@ Claude Code plugins for [Atomic CSS](https://atomiccss.dev) and markup conventio
 /plugin install markup-convention@atomic-skills
 ```
 
-`figma-to-atomic` reads designs through the official Figma plugin (`figma@claude-plugins-official`).
+`figma-to-atomic` reads designs through the Figma MCP (official Figma plugin or the claude.ai Figma connector).
+
+These skills cover how to use the tools only. Work policies such as structure, accessibility, responsive rules, assets, and states belong to the project or user rules that use them.
 
 ## Usage
 

@@ -1439,7 +1439,6 @@
 | --- | --- |
 | 네이밍 | CSS 속성+값의 앞글자 조합 (예: display:flex → df, justify-content:center → jcc) |
 | 단위 규칙 | 20px 미만 → px (gap8px), 20px 이상 → rem (gap2rem = 20px, 1rem = 10px) |
-| 간격 | 디자인 값 우선. 정해진 값이 없을 때 margin/padding/gap 등은 4의 배수 권장 (4, 8, 12, 16, 20, 24, 32...) |
 | p = % | w50p → width: 50%, h100p → height: 100% |
 | 하이픈(-) | 소수점: gap1-5rem → 1.5rem / 값 구분: gtc1fr-2fr → 1fr 2fr / 미디어: sm-dn / 의사클래스: hover-bg000000 |
 | i 접미사 | !important 추가. 예: w100pxi → width: 100px !important |
