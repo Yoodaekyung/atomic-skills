@@ -1,7 +1,7 @@
 {
     "name": "atomic-css",
     "description": "Atomic CSS class authoring, Figma to Atomic conversion, and the atomic-css MCP server",
-    "version": "2.1.1",
+    "version": "2.1.2",
     "author": {
         "name": "Yoodaekyung"
     }
