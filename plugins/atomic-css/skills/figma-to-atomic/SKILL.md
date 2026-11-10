@@ -49,15 +49,18 @@ argument-hint: "[Figma URL 또는 반영할 디자인]"
 | Figma | Atomic |
 |---|---|
 | 세로 Auto Layout + gap | `dg gap{값}` |
-| 가로 나열 | `df aic gap{값}` 또는 `dg gtcauto-auto` |
+| 가로 나열 | `dg gtcauto-auto gap{값}` (칸 수만큼 `auto`) |
+| 버튼·칩 안 아이콘 + 텍스트 | `df aic gap{값}` |
 | 균등 채움 | `dg gtcr{n}-1fr` |
-| 양쪽 정렬 | `dg gtc1fr-auto` 또는 `df jcsb` |
+| 양쪽 정렬 | `dg gtc1fr-auto` |
 | Fill container | `w100p` / `fg1` |
 | Hug | 클래스 없음 |
-| 부모 높이 채움 | `h100p` / `fg1` / `minh100vh` |
+| 부모 높이 채움 | 부모부터 `h100p` 체인, `dg gtrauto-1fr`, Flex 자식 `fg1 minh0` (`atomic` 스킬) |
+| 안쪽 스크롤 영역 (표 래퍼) | `minh0 oya` |
 | 절대 좌표 자유 배치 | 행별로 묶고 폭 비율로 `gtc150fr-302fr-112fr` |
 | 오버레이·배지 | 부모 `pr` + 자식 `pa t.. l..` |
 
+- 레이아웃은 Grid(`dg`)가 기본이다. Flex(`df`)는 버튼·칩 안 아이콘과 텍스트처럼 한 줄 안의 작은 정렬에만 쓴다. Figma MCP가 `flex`로 줘도 이 기준으로 다시 고른다
 - 형제 사이 간격은 부모 gap으로, gap이 없으면 개별 margin으로 반드시 반영한다
 - 구분선(line, 얇은 rectangle)은 border나 `hr`로 반드시 옮긴다
 - 전역 스타일(`input[type=...]` 등 요소 셀렉터)이 클래스보다 우선하면 셀렉터를 결합(`input.클래스`)해 덮어쓴다. `!important`는 쓰지 않는다

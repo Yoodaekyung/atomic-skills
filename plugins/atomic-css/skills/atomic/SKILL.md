@@ -32,6 +32,8 @@ argument-hint: "[만들 컴포넌트나 바꿀 CSS]"
 - 미디어 프리픽스는 max-width. 데스크톱 값을 먼저 쓰고 작은 화면 값을 덮어쓴다 (`gtcr3-1fr md-gtcr2-1fr sm-gtc1fr`)
 - 디자인 폭 비율 Grid는 클래스로 된다: `gtc150fr-302fr-112fr`
 - Grid 자식이 넘치면 부모에 `gtc100p` 또는 자식에 `minw0`
+- 높이 채움은 부모부터 끊기지 않게: 위 단계마다 높이(`h100p`·`minh100vh`)가 있어야 자식 `h100p`가 먹는다. Grid는 `dg gtrauto-1fr h100p`로 남은 높이를 `1fr` 행에, Flex 자식은 `fg1 minh0`
+- 안에서 스크롤할 영역(표 래퍼 등)은 `minh0 oya`. `minh0`이 없으면 내용만큼 늘어나 부모를 넘친다
 - 고정 폭은 `maxw100p`를 같이 준다: `w64rem maxw100p`
 
 ## 검증 체크리스트
