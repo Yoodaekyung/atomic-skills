@@ -1,7 +1,7 @@
 {
     "name": "markup-convention",
     "description": "Markup structure, naming, and accessibility rules with the convention-lint MCP server",
-    "version": "2.1.0",
+    "version": "2.1.1",
     "author": {
         "name": "Yoodaekyung"
     }

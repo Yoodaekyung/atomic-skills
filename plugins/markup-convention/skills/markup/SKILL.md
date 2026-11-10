@@ -17,7 +17,7 @@ argument-hint: "[검사할 마크업이나 정할 이름]"
 | id | camelCase | `btnCreate`, `inputTitle` |
 | 문서 파일 (`.html` `.vue` `.jsx` `.tsx` 등) | kebab-case. 컴포넌트 파일은 프로젝트 관례 | `main-visual.html`, `MainVisual.tsx` |
 | 에셋 파일 (이미지·폰트·영상·사운드) | snake_case | `gnb_icon_search.svg`, `bg_img_main_1920x1080.jpg` |
-| 폴더 | lowercase (구분자 없음) | `images`, `icons`, `gnb` |
+| 폴더 | snake_case (한 단어가 기본) | `images`, `icons`, `gnb_icons` |
 
 - 클래스명만 보고 역할을 알 수 있게 쓴다. `tbl-inp`가 아니라 `table-input`, `btn-pub`가 아니라 `btn-publish`
 - Atomic CSS 클래스(`df`, `gap8px` 등)는 검사에서 제외된다
